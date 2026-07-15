@@ -1,0 +1,3 @@
+export const formatRupiah = (value: number) => new Intl.NumberFormat('id-ID',{style:'currency',currency:'IDR',maximumFractionDigits:0}).format(Number(value||0));
+export const formatDate = (value: string) => value ? new Intl.DateTimeFormat('id-ID',{dateStyle:'medium',timeStyle:'short'}).format(new Date(value)) : '-';
+export const statusLabel = (s:string) => ({pending_payment:'Menunggu Pembayaran',waiting_verification:'Menunggu Verifikasi',paid:'Lunas',completed:'Selesai',rejected:'Ditolak',payment_rejected:'Pembayaran Ditolak',cancelled:'Dibatalkan',unpaid:'Belum Bayar'}[s]||s.split('_').join(' '));

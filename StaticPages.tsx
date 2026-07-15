@@ -1,0 +1,8 @@
+export function AboutPage(){return <Static title="Tentang NAFI Marketplace"><p>NAFI Marketplace menyediakan produk digital pilihan seperti prompt AI, template, tools, dan website yang dirancang untuk membantu individu dan bisnis bekerja lebih cepat.</p></Static>}
+export function HelpPage(){return <Static title="Pusat Bantuan"><p>Butuh bantuan mengenai transaksi, pembayaran QRIS, atau akses download? Hubungi tim NAFI melalui kontak yang tercantum di website.</p></Static>}
+export function TermsPage(){return <Static title="Syarat dan Ketentuan"><p>Pengguna wajib menggunakan produk sesuai lisensi, tidak menyebarluaskan file tanpa izin, dan memberikan data transaksi yang benar.</p></Static>}
+export function PrivacyPage(){return <Static title="Kebijakan Privasi"><p>Data akun dan transaksi digunakan hanya untuk menjalankan layanan NAFI Marketplace dan tidak dijual kepada pihak lain.</p></Static>}
+export function RefundPolicyPage(){return <Static title="Kebijakan Refund"><p>Produk digital yang sudah diakses umumnya tidak dapat dikembalikan. Pengajuan kendala akan ditinjau oleh admin.</p></Static>}
+export function UnauthorizedPage(){return <Static title="Akses Ditolak"><p>Anda tidak memiliki izin untuk membuka halaman tersebut.</p></Static>}
+export function NotFoundPage(){return <Static title="Halaman Tidak Ditemukan"><p>Alamat yang Anda buka tidak tersedia.</p></Static>}
+function Static({title,children}:{title:string;children:React.ReactNode}){return <section className="page"><div className="container narrow"><div className="page-head"><span className="eyebrow">NAFI MARKETPLACE</span><h1>{title}</h1></div><div className="content-card prose">{children}</div></div></section>}
