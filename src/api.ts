@@ -271,7 +271,7 @@ export function errorMessage(
     FORBIDDEN:
       error instanceof Error && error.message
         ? error.message
-        : 'Anda tidak memiliki izin membuka halaman ini.',,
+        : 'Anda tidak memiliki izin membuka halaman ini.',
 
     ACCOUNT_DISABLED:
       'Akun Anda sedang dinonaktifkan.',
