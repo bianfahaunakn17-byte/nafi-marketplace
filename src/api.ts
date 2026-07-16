@@ -282,7 +282,7 @@ export function errorMessage(
     NOT_FOUND:
       error instanceof Error && error.message
         ? error.message
-        : 'Data yang Anda cari tidak ditemukan.',,
+        : 'Data yang Anda cari tidak ditemukan.',
 
     TIMEOUT:
       'Koneksi ke server terlalu lama.',
