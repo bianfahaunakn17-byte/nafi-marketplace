@@ -269,7 +269,9 @@ export function errorMessage(
       'Sesi Anda telah berakhir. Silakan login kembali.',
 
     FORBIDDEN:
-      'Anda tidak memiliki izin membuka halaman ini.',
+      error instanceof Error && error.message
+        ? error.message
+        : 'Anda tidak memiliki izin membuka halaman ini.',,
 
     ACCOUNT_DISABLED:
       'Akun Anda sedang dinonaktifkan.',
@@ -278,7 +280,9 @@ export function errorMessage(
       'Akun terkunci sementara.',
 
     NOT_FOUND:
-      'Data yang Anda cari tidak ditemukan.',
+      error instanceof Error && error.message
+        ? error.message
+        : 'Data yang Anda cari tidak ditemukan.',,
 
     TIMEOUT:
       'Koneksi ke server terlalu lama.',
